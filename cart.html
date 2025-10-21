@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Millat — Cart</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Millat</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">All Products</a>
+        <a href="featured.html" class="nav-link">Featured</a>
+        <a href="cart.html" class="nav-link cart-link">Cart 🛒 <span id="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="container card">
+      <h2>Your Cart</h2>
+
+      <div id="cart-area">
+        <!-- Filled by app.js -->
+      </div>
+
+      <aside id="order-summary" class="order-summary">
+        <!-- Order summary + WhatsApp button -->
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2025 Millat — Sling Bags for Urban Life</small>
+      <div class="footer-meta">We will respond on WhatsApp to confirm availability and pickup time.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    // Render cart UI on load
+    window.renderCart();
+  </script>
+</body>
+</html>
