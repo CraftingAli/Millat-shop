@@ -1,1 +1,12 @@
-
+[
+  {"id":"prod001","name":"Champagne Luxe Sling","price":399,"image":"assets/images/MRP 500-- Discounted price 300-- (1).webp","desc":"Elegant metallic finish sling, compact but roomy.","featured": true},
+  {"id":"prod002","name":"Metallic Chic Satchel","price":399,"image":"assets/images/MRP 500-- Discounted price 300-- (2).webp","desc":"Shiny, attention-grabbing satchel for evenings.","featured": false},
+  {"id":"prod003","name":"Rosegold Glimmer Purse","price":399,"image":"assets/images/MRP 500-- Discounted price 300-- (3).webp","desc":"Petite purse with rosegold accents.","featured": false},
+  {"id":"prod004","name":"Midnight Chevron Classic","price":399,"image":"assets/images/SaveVid.Net_488514894_17855719350408399_794303596306172151_n.jpg.webp","desc":"Classic chevron pattern in deep midnight tone.","featured": true},
+  {"id":"prod005","name":"Retro Check Crossbody","price":399,"image":"assets/images/490096754_17856943182408399_6580480690991479878_n.webp","desc":"Retro checks for casual everyday wear.","featured": false},
+  {"id":"prod006","name":"GeoPattern Sling","price":399,"image":"assets/images/489933165_17856941241408399_2704605971306978582_n.webp","desc":"Geometric pattern for the bold commuter.","featured": false},
+  {"id":"prod007","name":"Cherry Blossom Tote","price":399,"image":"assets/images/476483607_17846259693408399_3685024734482512667_n.webp","desc":"Floral tote with soft pastel tones.","featured": true},
+  {"id":"prod008","name":"Classic Monogram Hobo","price":399,"image":"assets/images/490566266_17856941178408399_3900153486008594922_n.webp","desc":"Monogram-style hobo bag, spacious and stylish.","featured": false},
+  {"id":"prod009","name":"Artisanal Garden Satchel","price":399,"image":"assets/images/490054116_17856940698408399_2286720518870534915_n.webp","desc":"Handprinted garden motifs, artisanal finish.","featured": false},
+  {"id":"prod010","name":"Pastel Flora Shoulder Bag","price":399,"image":"assets/images/MRP 500-- Discounted price 300--.webp","desc":"Soft pastel shoulder bag with floral print.","featured": true}
+]
