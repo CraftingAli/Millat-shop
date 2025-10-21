@@ -1,1 +1,93 @@
+:root{
+  --bg: #f7f7f6;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #c2410c; /* warm terracotta accent */
+  --accent-2: #f97316;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(15,23,42,0.06);
+  --max-width: 1200px;
+}
 
+/* Base / reset */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.4;
+}
+
+/* Page wrap */
+.wrap{max-width:var(--max-width);margin:0 auto;padding:1rem;}
+
+/* Header */
+.site-header{background:#0f1724;color:#fff;position:sticky;top:0;z-index:40;box-shadow:0 2px 8px rgba(2,6,23,0.4)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.brand{font-weight:700;color:white;text-decoration:none;font-size:1.25rem;letter-spacing:0.6px}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav .nav-link{color:rgba(255,255,255,0.9);text-decoration:none;padding:0.45rem 0.6rem;border-radius:8px}
+.main-nav .nav-link:hover{background:rgba(255,255,255,0.04)}
+.cart-link{display:flex;align-items:center;gap:0.5rem}
+
+/* Hero */
+.hero{padding:2.25rem 0}
+.hero--accent{background:linear-gradient(90deg, rgba(249,115,22,0.08), rgba(194,65,12,0.05));border-radius:10px;padding:1.25rem;margin-bottom:1rem}
+.hero-inner h1{margin:0 0 0.4rem;font-size:1.8rem}
+.lead{color:var(--muted);margin:0}
+
+/* Grid of products */
+.grid-section{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:1.25rem 0}
+@media (max-width:980px){.grid-section{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid-section{grid-template-columns:1fr}}
+
+/* Card */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.product-card{display:flex;flex-direction:column;height:100%}
+.product-media{position:relative;overflow:hidden;background:#fafafa}
+.product-media img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .35s ease}
+.product-card:hover .product-media img{transform:scale(1.04)}
+.product-body{padding:1rem;display:flex;flex-direction:column;gap:0.5rem;flex:1}
+.product-title{display:flex;justify-content:space-between;align-items:center;gap:0.5rem}
+.product-title h3{margin:0;font-size:1.05rem}
+.new-badge{background:var(--accent-2);color:white;padding:3px 8px;border-radius:999px;font-size:0.75rem}
+.product-desc{color:var(--muted);font-size:0.9rem;min-height:42px}
+.price-row{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.price{font-weight:700;font-size:1.05rem}
+.controls{display:flex;gap:0.6rem;align-items:center}
+.qty-wrap{display:inline-flex;align-items:center;border-radius:8px;background:#f3f4f6;padding:4px}
+.qty-btn{background:transparent;border:0;padding:6px 8px;cursor:pointer;font-weight:700;color:var(--text)}
+.qty-num{min-width:28px;text-align:center;padding:0 6px;font-weight:600}
+
+/* Add / quick action */
+.btn{
+  display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);
+  color:white;padding:0.55rem 0.9rem;border-radius:999px;border:0;cursor:pointer;font-weight:700;text-decoration:none;
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(196,65,12,0.12)}
+.btn.small{padding:0.35rem 0.6rem;font-size:0.95rem}
+
+/* Footer */
+.site-footer{margin-top:2rem;padding:1.25rem 0;background:transparent;color:var(--muted)}
+.footer-meta{margin-top:0.4rem;font-size:0.9rem;color:var(--muted)}
+
+/* Cart page specific */
+.container.card{display:grid;grid-template-columns:1fr 320px;gap:1rem}
+@media (max-width:980px){.container.card{grid-template-columns:1fr}}
+.order-summary{background:var(--card);border-radius:12px;padding:1rem;box-shadow:var(--shadow)}
+.cart-table{width:100%;border-collapse:collapse;font-size:0.95rem}
+.cart-table th{background:#fbfbfb;text-align:left;padding:10px;border-bottom:1px solid #eee}
+.cart-table td{padding:10px;border-bottom:1px solid #f0f0f0}
+.cart-empty{text-align:center;padding:2rem;color:var(--muted)}
+.summary-row{display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0}
+
+/* tiny utilities */
+.text-muted{color:var(--muted);font-size:0.95rem}
+.center{text-align:center}
